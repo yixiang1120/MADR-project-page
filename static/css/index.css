@@ -34,6 +34,16 @@ video {
   font-family: 'Google Sans', sans-serif;
 }
 
+.featured-video-wrapper {
+  margin-bottom: 30px;
+}
+
+.featured-video {
+  width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 
 .publication-title {
 }
@@ -206,8 +216,17 @@ p {
     white-space: normal;
   }
 
-  .teaser video {
-    width: 100% !important;
+  .featured-video {
+    width: 92% !important;
+  }
+
+  .featured-video-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .featured-example .results-carousel .box {
+    max-height: 220px;
+    overflow-y: auto;
   }
 
   .results-carousel .item {
