@@ -218,8 +218,10 @@ body {
   }
 
   .featured-example .slider-item .box {
-    max-height: clamp(260px, 42vh, 420px);
-    overflow-y: auto;
+    height: clamp(260px, 42vh, 420px) !important;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     padding: 1rem 3.1rem;
   }
 
