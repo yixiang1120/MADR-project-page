@@ -1,12 +1,5 @@
 body {
   font-family: 'Noto Sans', sans-serif;
-  overflow-x: hidden;
-}
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
 }
 
 
@@ -34,17 +27,6 @@ video {
   font-family: 'Google Sans', sans-serif;
 }
 
-.featured-video-wrapper {
-  margin-bottom: 30px;
-}
-
-.featured-video {
-  width: 90%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-
 .publication-title {
 }
 
@@ -66,7 +48,6 @@ video {
 
 .publication-title {
     font-family: 'Google Sans', sans-serif;
-    overflow-wrap: anywhere;
 }
 
 .publication-authors {
@@ -138,22 +119,12 @@ video {
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 0;
-  font-size: 1rem;
-  min-width: 0;
+  font-size: 0;
 }
 
 .results-carousel video {
   margin: 0;
 }
-
-.box,
-.content,
-.subtitle,
-.title,
-p {
-  overflow-wrap: break-word;
-}
-
 
 .interpolation-panel {
   background: #f5f5f5;
@@ -181,70 +152,4 @@ p {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-body,
-  .section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .publication-title {
-    font-size: 1.8rem !important;
-    line-height: 1.18;
-  }
-
-  .publication-authors,
-  .subtitle.is-5 {
-    font-size: 1rem !important;
-  }
-
-  .publication-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .publication-links .link-block,
-  .publication-links .button {
-    max-width: 100%;
-  }
-
-  .publication-links .button span:last-child {
-    white-space: normal;
-  }
-
-  .featured-video {
-    width: 92% !important;
-  }
-
-  .featured-video-wrapper {
-    margin-bottom: 1rem;
-  }
-
-  .featured-example .results-carousel .box {
-    max-height: 220px;
-    overflow-y: auto;
-  }
-
-  .results-carousel .item {
-    margin: 0;
-    border-radius: 8px;
-  }
-
-  .results-carousel .box {
-    padding: 1rem;
-  }
-
-  .results-carousel .title.is-5,
-  .box .title.is-5 {
-    font-size: 1.05rem;
-    line-height: 1.25;
-  }
-
-  .content.has-text-justified {
-    text-align: left !important;
-  }
 }
