@@ -216,10 +216,15 @@ body {
   }
 
   .featured-example .slider-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     max-width: none;
   }
 
   .featured-example .slider-item {
+    flex: 0 0 100% !important;
+    width: 100% !important;
     min-width: 0;
   }
 
