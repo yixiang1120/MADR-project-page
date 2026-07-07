@@ -32,8 +32,15 @@ $(document).ready(function() {
     var options = {
 			slidesToScroll: 1,
 			slidesToShow: 2,
+      breakpoints: [
+        {
+          changePoint: 768,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      ],
 			loop: true,
-			infinite: true,
+			infinite: false,
 			autoplay: false,
 			autoplaySpeed: 3000,
     }

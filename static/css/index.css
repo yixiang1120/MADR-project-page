@@ -211,38 +211,21 @@ body {
 
   .featured-example .slider {
     width: 100% !important;
-    max-width: calc(100vw - 1.8rem);
+    max-width: 100%;
     overflow: hidden;
   }
 
   .featured-example .slider-container {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100%;
-    height: auto !important;
-    opacity: 1 !important;
-    transform: none !important;
+    max-width: none;
   }
 
   .featured-example .slider-item {
-    display: block;
-    width: 100% !important;
     min-width: 0;
   }
 
   .featured-example .slider-item .item {
-    margin: 0 0 0.75rem;
+    margin: 0;
     font-size: 1rem;
-  }
-
-  .featured-example .slider-item:not(.is-current):not(.is-slide-next) {
-    display: none;
-  }
-
-  .featured-example .slider-navigation-previous,
-  .featured-example .slider-navigation-next,
-  .featured-example .slider-pagination {
-    display: none !important;
   }
 
   .featured-example .slider-item .box {
