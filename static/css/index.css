@@ -1,5 +1,12 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -49,6 +56,7 @@ body {
 
 .publication-title {
     font-family: 'Google Sans', sans-serif;
+    overflow-wrap: anywhere;
 }
 
 .publication-authors {
@@ -120,11 +128,20 @@ body {
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 0;
-  font-size: 0;
+  font-size: 1rem;
+  min-width: 0;
 }
 
 .results-carousel video {
   margin: 0;
+}
+
+.box,
+.content,
+.subtitle,
+.title,
+p {
+  overflow-wrap: break-word;
 }
 
 
@@ -154,4 +171,61 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-body,
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .publication-title {
+    font-size: 1.8rem !important;
+    line-height: 1.18;
+  }
+
+  .publication-authors,
+  .subtitle.is-5 {
+    font-size: 1rem !important;
+  }
+
+  .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .publication-links .link-block,
+  .publication-links .button {
+    max-width: 100%;
+  }
+
+  .publication-links .button span:last-child {
+    white-space: normal;
+  }
+
+  .teaser video {
+    width: 100% !important;
+  }
+
+  .results-carousel .item {
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .results-carousel .box {
+    padding: 1rem;
+  }
+
+  .results-carousel .title.is-5,
+  .box .title.is-5 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+  }
+
+  .content.has-text-justified {
+    text-align: left !important;
+  }
 }
