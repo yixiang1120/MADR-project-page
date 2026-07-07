@@ -209,6 +209,35 @@ body {
     min-width: 0;
   }
 
+  .featured-example .slider {
+    overflow: hidden;
+  }
+
+  .featured-example .slider-item .item {
+    font-size: 1rem;
+  }
+
+  .featured-example .slider-item .box {
+    max-height: clamp(260px, 42vh, 420px);
+    overflow-y: auto;
+    padding: 1rem 3.1rem;
+  }
+
+  .featured-example .slider-item .title.is-5 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+  }
+
+  .featured-example .slider-item p {
+    line-height: 1.4 !important;
+  }
+
+  .featured-example .slider-navigation-previous,
+  .featured-example .slider-navigation-next {
+    width: 38px;
+    height: 38px;
+  }
+
   .content.has-text-justified {
     text-align: left !important;
   }
