@@ -153,3 +153,65 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-body,
+  .section {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .publication-title {
+    font-size: 1.8rem !important;
+    line-height: 1.18;
+    overflow-wrap: break-word;
+  }
+
+  .publication-authors,
+  .hero.teaser .subtitle {
+    font-size: 1rem !important;
+    line-height: 1.35;
+  }
+
+  .hero.teaser .subtitle {
+    margin-bottom: 0.9rem !important;
+  }
+
+  .hero.teaser .has-text-centered[style*="margin-bottom: 30px"] {
+    margin-bottom: 1rem !important;
+  }
+
+  .hero.teaser video[autoplay] {
+    width: 82% !important;
+    max-height: 32vh;
+    object-fit: contain;
+  }
+
+  #narrative-carousel .item {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  #narrative-carousel .box {
+    max-height: 210px;
+    overflow-y: auto;
+    padding: 0.9rem;
+  }
+
+  #narrative-carousel .title.is-5 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+  }
+
+  #narrative-carousel p {
+    line-height: 1.4 !important;
+  }
+
+  .content.has-text-justified {
+    text-align: left !important;
+  }
+}
